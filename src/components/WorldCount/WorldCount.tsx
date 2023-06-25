@@ -142,12 +142,32 @@ const Index = Math.floor(Math.random() * sustainableGoals.length);
 const String = sustainableGoals[Index];
 
 let val1 = 0;
+
 let done = false;
 
 export const db = getFirestore(app);
 // Initialize Firebase
 
 function WorldCount() {
+  const checkVisited = () => {
+    const currentDate = new Date().toLocaleDateString();
+    const lastVisited = localStorage.getItem("lastVisited");
+    if(localStorage.getItem("lastVisited")==null){
+      
+      localStorage.setItem("lastVisited",new Date().toLocaleDateString()) // your choice of format
+  }
+    console.log("cur",currentDate)
+    console.log("last ",lastVisited)
+    if ((lastVisited === currentDate))  {
+      console.log("hai")
+      done=!done
+    } else {
+      localStorage.setItem("hasVisited", "true");
+    }
+  };
+  
+  
+ 
   const [countValue, setCount] = useState<number>(0);
 
   // Get a reference to the number in the Firebase database
@@ -173,7 +193,9 @@ function WorldCount() {
     const fetchData = async () => {
       getValue();
     };
+    checkVisited();
     fetchData();
+    
 
     const interval = setInterval(fetchData, 2000);
 
