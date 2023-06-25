@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <>
       <head>
-        <title>Sus Goals</title>
+        
         <link rel="icon" href="/favicon.svg" sizes="any" />
       </head>
       <main className="flex min-h-full w-full overflow-x-hidden flex-col items-start justify-between bg-[#F9F2ED] text-black transition-all">
