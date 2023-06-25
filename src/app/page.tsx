@@ -3,6 +3,8 @@ import WorldCount from "@/components/WorldCount/WorldCount";
 import Image from "next/image";
 import React, { useState, useRef, useEffect } from "react";
 import Head from "next/head";
+import Marquee from "react-fast-marquee";
+
 export default function Home() {
   useEffect(() => {
     document.title = "Sus Goals";
@@ -78,7 +80,14 @@ export default function Home() {
               Adventure at a Time!
             </div>
           </div>
+          
         </div>
+        <Marquee
+        
+        className="my-5 h-[16rem] text-[250px] overflow-hidden font-light text-blue-400"
+      >
+      <span className="text-blue-500">| Sus</span>tainble | Environmental awareness | Eco-conscious 
+      </Marquee>
         <div
           id="about"
           ref={aboutRef}
