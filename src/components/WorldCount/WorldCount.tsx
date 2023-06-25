@@ -12,7 +12,7 @@ import {
   doc,
 } from "firebase/firestore";
 
-console.log(process.env.FIREBASE_API_KEY);
+
 
 const firebaseConfig = {
   apiKey: "AIzaSyCl0ax0R398LtPDvO1up01uDX0X3vpqPa8",
@@ -142,13 +142,17 @@ const String = sustainableGoals[Index];
 let val1 = 0;
 
 let done = false;
-
+let checkVisited=()=>{
+  
+};
 export const db = getFirestore(app);
 // Initialize Firebase
 
 function WorldCount() {
+  if (typeof window !== 'undefined') {
+    
   localStorage.removeItem("lastVisited");
-  const checkVisited = () => {
+  checkVisited = () => {
     const currentDate = new Date().toLocaleDateString();
     const lastVisited = localStorage.getItem("lastVisited");
 
@@ -161,6 +165,7 @@ function WorldCount() {
       localStorage.setItem("hasVisited", "true");
     }
   };
+}
 
   const [countValue, setCount] = useState<number>(0);
 
