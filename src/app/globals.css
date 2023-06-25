@@ -25,4 +25,5 @@ body {
     )
     rgb(var(--background-start-rgb));
     scroll-behavior:smooth;
+    
 }

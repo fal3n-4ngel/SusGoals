@@ -28,7 +28,7 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-full w-full flex-col items-start justify-between bg-[#F9F2ED] text-black transition-all">
+    <main className="flex min-h-full w-full overflow-x-hidden flex-col items-start justify-between bg-[#F9F2ED] text-black transition-all">
       <nav className=" flex fixed  w-full h-12 p-10 items-center justify-between">
         <div className="font-light text-4xl">
           Sus<span className="font-thin ">Goals*</span>
@@ -67,7 +67,7 @@ export default function Home() {
         className="w-full md:h-screen h-full bg-[#F9F2ED]"
       >
         <div className="flex flex-col">
-          <div className="md:w-[70%] px-[2%] py-[17%] text-8xl text-ellipsis font-light leading-relaxed transition-all ">
+          <div className="md:w-[70%] px-[2%] py-[17%] text-6xl md:text-8xl text-ellipsis font-light leading-relaxed transition-all ">
             Unleash Your Inner <br />{" "}
             <span className="font-medium">Eco-Ninja</span>, One Dubious
             Adventure at a Time!
@@ -91,7 +91,7 @@ export default function Home() {
 
       <footer
         ref={contactRef}
-        className="w-full min-h-[300px] -mt-5 bg-[#f8e5d8] p-10 justify-end"
+        className="w-full md:min-h-[300px] md:visible invisible -mt-5 bg-[#f8e5d8] p-10 justify-end"
       >
         <div className="flex justify-between">
           <div>

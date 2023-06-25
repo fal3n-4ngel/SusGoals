@@ -143,7 +143,7 @@ let val1 = 0;
 
 let done = false;
 let checkVisited=()=>{
-  
+
 };
 export const db = getFirestore(app);
 // Initialize Firebase
@@ -240,20 +240,20 @@ function WorldCount() {
               )}
             </div>
           </div>
-          <div className=" w-[50%]  items-center mx-auto">
-            <div className="text-[150px] text-center  mx-auto mt-10">
+          <div className=" w-[50%]  items-center mx-auto ">
+            <div className="text-[150px] md:text-center text-ellipsis  mx-auto md:p-0 p-3 mt-10">
               {" "}
               {countValue}
             </div>
             {!done && (
-              <div className=" text-center text-4xl   mx-auto font-light p-5">
+              <div className=" md:text-center text-ellipsis text-3xl md:text-4xl  mx-auto font-light  md:p-5">
                 peeps are #sustainablegoals!. Wanna be{" "}
                 <span className="font-light">{countValue + 1}</span> th peep to
                 be sus.
               </div>
             )}
             {done && (
-              <div className=" text-center text-4xl   mx-auto font-light p-5">
+              <div className=" md:text-center text-ellipsis text-3xl md:text-4xl  mx-auto font-light  md:p-5">
                 peeps are #sustainablegoals!. Thanks for bein a part of this.
               </div>
             )}
