@@ -247,14 +247,14 @@ function WorldCount() {
             </div>
             {!done && (
               <div className=" md:text-center text-ellipsis text-3xl md:text-4xl  mx-auto font-light  md:p-5">
-                peeps are #sustainablegoals!. Wanna be{" "}
-                <span className="font-light">{countValue + 1}</span> th peep to
-                be sus.
+                #sustainablegoals! reached. Wanna do the {" "}
+                <span className="font-light">{countValue + 1}</span> th
+                 <span className="text-red-500 font-light"> Sus</span> goal?
               </div>
             )}
             {done && (
               <div className=" md:text-center text-ellipsis text-3xl md:text-4xl  mx-auto font-light  md:p-5">
-                peeps are #sustainablegoals!. Thanks for bein a part of this.
+                #sustainablegoals! reached. Thanks for bein <span className="text-red-500 font-light"> Sus</span> with us.
               </div>
             )}
           </div>

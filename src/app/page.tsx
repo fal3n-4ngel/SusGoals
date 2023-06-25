@@ -79,13 +79,12 @@ export default function Home() {
         ref={aboutRef}
         className="w-full h-screen mt-10 scroll-mt-10  "
       >
-        <div className="my-20 text bg-black "></div>
+        <div className="my-10 text bg-black "></div>
         <WorldCount />
-        <div>
-          <div>What is Sus Goals?</div>
-          <div>
-            
-          </div>
+        <div className="mt-[100px] w-[90%] mx-auto">
+          <div className="text-6xl  font-light my-10">What is Sus Goals?</div>
+          <div className="text-3xl font-light "> Sus Goals is simply my course project for Design and Engineering Subject under CSE BTech :&lt; I was supposed to make a craft based on sustainabilty and design but paper craft sounded soo boring so decided to go with a website and here we are. Why am I telling all these , coz I am out of content to fill this space up</div>
+          <div className="text-3xl font-light "> Anyway you a random Sustainable Goal everyday, DO IT and click the done button, it will increment the world wide counter for the goals reached. Techical side , Simply a react with next js app with firebase as backend which I coded on a single sleepless night.</div>
         </div>
       </div>
 
