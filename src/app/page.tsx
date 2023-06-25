@@ -1,13 +1,16 @@
 "use client";
 import WorldCount from "@/components/WorldCount/WorldCount";
 import Image from "next/image";
-import React, { useState, useRef } from "react";
+import React, { useState, useRef,useEffect } from "react";
 
 export default function Home() {
+
+  
+
   const aboutRef = useRef<HTMLDivElement>(null);
   const homeRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
-
+ 
   const scrollToAbout = () => {
     if (aboutRef.current) {
       aboutRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
