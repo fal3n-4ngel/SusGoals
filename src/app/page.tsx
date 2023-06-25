@@ -63,7 +63,7 @@ export default function Home() {
 
           <div
             onClick={scrollToAbout}
-            className="w-36 h-10 hover:cursor-pointer text-center font-light text-xl p-1 border-[1px] border-black rounded-md  hover:shadow-none shadow-[6px_6px_0px_rgb(0,0,0)]  hover:translate-y-0 -translate-y-1 hover:translate-x-0 -translate-x-1 transition-all"
+            className="md:w-36 w-24 h-10 hover:cursor-pointer text-center font-light text-xl p-1 border-[1px] border-black rounded-md  hover:shadow-none shadow-[6px_6px_0px_rgb(0,0,0)]  hover:translate-y-0 -translate-y-1 hover:translate-x-0 -translate-x-1 transition-all"
           >
             Les Go
           </div>
@@ -74,7 +74,7 @@ export default function Home() {
           className="w-full md:h-screen h-full bg-[#F9F2ED]"
         >
           <div className="flex flex-col">
-            <div className="md:w-[70%] px-[2%] py-[17%] text-6xl md:text-8xl text-ellipsis font-light leading-relaxed transition-all ">
+            <div className="md:w-[70%] px-[2%] py-[200px] md:py-[17%] text-5xl md:text-8xl text-ellipsis font-light leading-relaxed transition-all ">
               Unleash Your Inner <br />{" "}
               <span className="font-medium">Eco-Ninja</span>, One Dubious
               Adventure at a Time!
@@ -84,7 +84,7 @@ export default function Home() {
         </div>
         <Marquee
         
-        className="my-5 h-[16rem] text-[250px] overflow-hidden font-light text-blue-400"
+        className="my-5 md:h-[16rem] h-[12rem] md:text-[250px] text-[180px] overflow-hidden font-light text-blue-400"
       >
       <span className="text-blue-500">| Sus</span>tainble | Environmental awareness | Eco-conscious 
       </Marquee>
@@ -126,9 +126,9 @@ export default function Home() {
       </main>
       <footer
           ref={contactRef}
-          className="w-full mt-10 md:min-h-[200px] md:visible invisible  bg-[#f8e5d8] p-10 justify-end"
+          className="w-full mt-10 md:min-h-[200px]   bg-[#f8e5d8] p-10 justify-end"
         >
-          <div className="flex justify-between">
+          <div className="flex md:flex-row flex-col justify-between">
             <div>
               <div className="m-4 text-6xl text-black font-semibold">
                 Be Sus with us.
