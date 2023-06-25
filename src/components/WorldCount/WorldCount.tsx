@@ -159,8 +159,8 @@ function WorldCount() {
     console.log("cur", currentDate);
     console.log("last ", lastVisited);
     if (lastVisited === currentDate) {
-      console.log("hai");
-      done = !done;
+      
+      done = true;
     } else {
       localStorage.setItem("hasVisited", "true");
     }
