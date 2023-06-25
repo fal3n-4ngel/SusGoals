@@ -63,7 +63,7 @@ export default function Home() {
 
           <div
             onClick={scrollToAbout}
-            className="w-36 h-10 text-center font-light text-xl p-1 border-[1px] border-black rounded-md  hover:shadow-none shadow-[6px_6px_0px_rgb(0,0,0)]  hover:translate-y-0 -translate-y-1 hover:translate-x-0 -translate-x-1 transition-all"
+            className="w-36 h-10 hover:cursor-pointer text-center font-light text-xl p-1 border-[1px] border-black rounded-md  hover:shadow-none shadow-[6px_6px_0px_rgb(0,0,0)]  hover:translate-y-0 -translate-y-1 hover:translate-x-0 -translate-x-1 transition-all"
           >
             Les Go
           </div>
@@ -91,7 +91,7 @@ export default function Home() {
         <div
           id="about"
           ref={aboutRef}
-          className="w-full h-full mt-10 scroll-mt-10  "
+          className="w-full h-full my-10  scroll-mt-10  "
         >
           <div className="my-10 text bg-black "></div>
           <WorldCount />
