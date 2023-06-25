@@ -141,7 +141,7 @@ const String = sustainableGoals[Index];
 
 let val1 = 0;
 
-let done = false;
+let done = true;
 let checkVisited=()=>{
 
 };
@@ -163,6 +163,7 @@ function WorldCount() {
       done = true;
     } else {
       localStorage.setItem("hasVisited", "true");
+      done=false;
     }
   };
 }
