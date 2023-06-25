@@ -151,7 +151,7 @@ export const db = getFirestore(app);
 function WorldCount() {
   if (typeof window !== 'undefined') {
     
-  localStorage.removeItem("lastVisited");
+  
   checkVisited = () => {
     const currentDate = new Date().toLocaleDateString();
     const lastVisited = localStorage.getItem("lastVisited");
