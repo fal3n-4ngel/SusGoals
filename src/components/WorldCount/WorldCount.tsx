@@ -17,9 +17,7 @@ console.log(process.env.FIREBASE_API_KEY);
 const firebaseConfig = {
   apiKey: "AIzaSyCl0ax0R398LtPDvO1up01uDX0X3vpqPa8",
   authDomain: "susgoals.firebaseapp.com",
-
   projectId: "susgoals",
-
   storageBucket: "susgoals.appspot.com",
   messagingSenderId: "133809952494",
   appId: "1:133809952494:web:e5110d8592e752c3a245ff",
@@ -27,7 +25,7 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+
 
 const sustainableGoals = [
   "Turn off lights and unplug electronics when not in use",
