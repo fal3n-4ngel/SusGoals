@@ -30,13 +30,13 @@ export default function Home() {
   };
 
   return (
-    <>
+    <div className="bg-[#f8e5d8]">
       <head>
         
         <link rel="icon" href="/favicon.svg" sizes="any" />
       </head>
       <main className="flex min-h-full w-full overflow-x-hidden flex-col items-start justify-between bg-[#F9F2ED] text-black transition-all">
-        <nav className=" flex fixed  w-full h-12 p-10 items-center justify-between">
+        <nav className="z-10 bg-[#F9F2ED] flex fixed  w-full h-12 p-10 items-center justify-between">
           <div className="font-light text-4xl">
             Sus<span className="font-thin ">Goals*</span>
           </div>
@@ -91,13 +91,13 @@ export default function Home() {
         <div
           id="about"
           ref={aboutRef}
-          className="w-full h-screen mt-10 scroll-mt-10  "
+          className="w-full h-full mt-10 scroll-mt-10  "
         >
           <div className="my-10 text bg-black "></div>
           <WorldCount />
           <div className="mt-[100px] w-[90%] mx-auto">
             <div className="text-6xl  font-light my-10">What is Sus Goals?</div>
-            <div className="text-3xl font-light ">
+            <div className="text-3xl font-light h-full ">
               <span className="font-semibold">Sus Goals</span> is simply a
               project for my{" "}
               <span className="text-blue-300">Design and Engineering</span>{" "}
@@ -116,15 +116,17 @@ export default function Home() {
               <span className="text-blue-300">refreshes daily</span>,
               <span className="text-green-400">DO IT</span> and click the done
               button, it will increment the world wide counter for the goals
-              reached. Techical side , Simply a react with next js app with
+              reached. Technical side , Simply a react with next js app with
               firebase as backend which I coded on a single sleepless night.
             </div>
           </div>
         </div>
 
-        <footer
+        
+      </main>
+      <footer
           ref={contactRef}
-          className="w-full md:min-h-[300px] md:visible invisible -mt-5 bg-[#f8e5d8] p-10 justify-end"
+          className="w-full mt-10 md:min-h-[200px] md:visible invisible  bg-[#f8e5d8] p-10 justify-end"
         >
           <div className="flex justify-between">
             <div>
@@ -157,7 +159,6 @@ export default function Home() {
             </div>
           </div>
         </footer>
-      </main>
-    </>
+    </div>
   );
 }
