@@ -148,7 +148,7 @@ let checkVisited=()=>{
 
 export const db = getFirestore(app);
 // Initialize Firebase
-
+localStorage.removeItem("lastVisited")
 function WorldCount() {
   if (typeof window !== 'undefined') {
     
@@ -218,11 +218,11 @@ function WorldCount() {
             <div className="flex justify-center mt-10">
               {!done && (
                 <button
-                  className="bg-black text-white rounded-full w-28 h-28 flex items-center justify-center animate-bounce"
+                  className="group bg-black text-white rounded-full w-28 h-28 flex flex-col items-center justify-center animate-bounce"
                   onClick={increment}
                 >
                   <svg
-                    className="w-16 h-16 text-green-100 hover:text-green-400"
+                    className="w-16 h-16 text-green-100 hover:text-green-400 group-hover:scale-150 transition-all shadow-green-300"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -235,6 +235,7 @@ function WorldCount() {
                       d="M5 13l4 4L19 7"
                     ></path>
                   </svg>
+                  
                 </button>
               )}
             </div>
