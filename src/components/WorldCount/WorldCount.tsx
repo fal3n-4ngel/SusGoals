@@ -160,7 +160,6 @@ function WorldCount() {
     console.log("cur", currentDate);
     console.log("last ", lastVisited);
     if (lastVisited === currentDate) {
-      
       done = true;
     } else {
       done=false;
@@ -184,9 +183,7 @@ function WorldCount() {
   };
 
   const increment = async () => {
-    if (localStorage.getItem("lastVisited") == null) {
-      localStorage.setItem("lastVisited", new Date().toLocaleDateString());
-    }
+    localStorage.setItem("lastVisited", new Date().toLocaleDateString());
     const numberDoc = doc(db, "count", "count");
     done = true;
     await updateDoc(numberDoc, {

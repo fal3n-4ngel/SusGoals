@@ -9,6 +9,7 @@ export default function Home() {
   useEffect(() => {
     document.title = "Sus Goals";
   }, []);
+  
   const aboutRef = useRef<HTMLDivElement>(null);
   const homeRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
