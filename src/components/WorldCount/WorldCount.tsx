@@ -163,7 +163,6 @@ function WorldCount() {
       
       done = true;
     } else {
-      localStorage.setItem("hasVisited", "true");
       done=false;
     }
   };
@@ -171,7 +170,7 @@ function WorldCount() {
 
   const [countValue, setCount] = useState<number>(0);
 
-  // Get a reference to the number in the Firebase database
+  
   const getValue = async () => {
     const numberDoc = collection(db, "count");
     const docSnapshot = await getDocs(numberDoc);
@@ -180,13 +179,14 @@ function WorldCount() {
     setTimeout(() => {
       val1 = val;
       setCount(val);
-      if (localStorage.getItem("lastVisited") == null) {
-        localStorage.setItem("lastVisited", new Date().toLocaleDateString());
-      }
+      
     }, 100);
   };
 
   const increment = async () => {
+    if (localStorage.getItem("lastVisited") == null) {
+      localStorage.setItem("lastVisited", new Date().toLocaleDateString());
+    }
     const numberDoc = doc(db, "count", "count");
     done = true;
     await updateDoc(numberDoc, {
