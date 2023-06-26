@@ -75,7 +75,7 @@ export default function Home() {
           className="w-full min-h-screen h-full bg-[#F9F2ED]"
         >
           <div className="flex flex-col">
-            <div className="md:w-[70%] px-[2%] pt-[200px] md:pt-[17%] text-5xl md:text-9xl text-ellipsis font-light leading-relaxed transition-all ">
+            <div className="md:w-[75%] px-[2%] pt-[200px] md:pt-[17%] text-5xl md:text-9xl text-ellipsis font-light leading-relaxed transition-all ">
               Unleash Your Inner <br />{" "}
               <span className="font-medium">Eco-Ninja</span>, <br/>One Dubious
               Adventure at a Time!
