@@ -72,7 +72,7 @@ export default function Home() {
         <div
           id="home"
           ref={homeRef}
-          className="w-full md:h-screen h-full bg-[#F9F2ED]"
+          className="w-full min-h-screen h-full bg-[#F9F2ED]"
         >
           <div className="flex flex-col">
             <div className="md:w-[70%] px-[2%] pt-[200px] md:pt-[17%] text-5xl md:text-9xl text-ellipsis font-light leading-relaxed transition-all ">
