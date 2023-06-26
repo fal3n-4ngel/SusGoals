@@ -87,7 +87,7 @@ export default function Home() {
         
         className="my-5 md:h-[16rem] h-[12rem] md:text-[250px] text-[180px] overflow-hidden font-light text-blue-400"
       >
-      | <span className="text-blue-500"> Sus</span>tainble | Environmental awareness | Eco-conscious 
+      |<span className="text-blue-500"> Sus</span>tainble | Environmental awareness | Eco-conscious 
       </Marquee>
         <div
           id="about"
