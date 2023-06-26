@@ -148,7 +148,7 @@ let checkVisited=()=>{
 
 export const db = getFirestore(app);
 // Initialize Firebase
-localStorage.removeItem("lastVisited")
+
 function WorldCount() {
   if (typeof window !== 'undefined') {
     
