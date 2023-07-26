@@ -157,8 +157,7 @@ function WorldCount() {
     const currentDate = new Date().toLocaleDateString();
     const lastVisited = localStorage.getItem("lastVisited");
 
-    console.log("cur", currentDate);
-    console.log("last ", lastVisited);
+    
     if (lastVisited === currentDate) {
       done = true;
     } else {
@@ -235,7 +234,7 @@ function WorldCount() {
                       d="M5 13l4 4L19 7"
                     ></path>
                   </svg>
-                  
+                  .
                 </button>
               )}
             </div>
