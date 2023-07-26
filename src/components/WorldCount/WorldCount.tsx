@@ -216,7 +216,8 @@ function WorldCount() {
             </div>
             <div className="flex justify-center mt-10">
               {!done && (
-                <button
+                <button 
+                  title="."
                   className="group bg-black text-white rounded-full w-28 h-28 flex flex-col items-center justify-center animate-bounce"
                   onClick={increment}
                 >
@@ -234,7 +235,7 @@ function WorldCount() {
                       d="M5 13l4 4L19 7"
                     ></path>
                   </svg>
-                  .
+                  
                 </button>
               )}
             </div>
