@@ -98,7 +98,7 @@ export default function Home() {
           <WorldCount />
           <div className="mt-[100px] w-[90%] mx-auto">
             <div className="text-6xl  font-light my-10">What is Sus Goals?</div>
-            <div className="text-3xl font-light h-full ">
+            <div className="text-2xl md:text-3xl font-light h-full ">
               <span className="font-semibold">Sus Goals</span> is simply a
               project for my{" "}
               <span className="text-blue-300">Design and Engineering</span>{" "}
@@ -111,7 +111,7 @@ export default function Home() {
               and here we are. Why am I telling all these , coz I am out of
               content to fill this space up
             </div>
-            <div className="text-3xl font-light ">
+            <div className="text-2xl md:text-3xl font-light ">
               {" "}
               Anyway this site gives you a random Sustainable Goal that{" "}
               <span className="text-blue-300">refreshes daily</span>,
