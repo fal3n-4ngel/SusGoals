@@ -153,9 +153,9 @@ export default function Home() {
                   Insta : 4di.krish
                 </div>
               </a>
-              <a href="https://fal3n-4ngel.vercel.app/">
+              <a href="https://www.adithyakrishnan.com/">
               <div className="text-lg text-gray-500 hover:text-black cursor-pointer transition-all duration-600">
-                Website : https://fal3n-4ngel.vercel.app/
+                Website : www.adithyakrishnan.com
               </div>
               </a>
             </div>
