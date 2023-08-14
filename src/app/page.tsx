@@ -9,11 +9,11 @@ export default function Home() {
   useEffect(() => {
     document.title = "Sus Goals";
   }, []);
-  
+
   const aboutRef = useRef<HTMLDivElement>(null);
   const homeRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
-  
+
   const scrollToAbout = () => {
     if (aboutRef.current) {
       aboutRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -33,7 +33,6 @@ export default function Home() {
   return (
     <div className="bg-[#f8e5d8]">
       <head>
-        
         <link rel="icon" href="/favicon.svg" sizes="any" />
       </head>
       <main className="flex min-h-full w-full overflow-x-hidden flex-col items-start justify-between bg-[#F9F2ED] text-black transition-all">
@@ -77,18 +76,15 @@ export default function Home() {
           <div className="flex flex-col">
             <div className="md:w-[75%] px-[2%] pt-[200px] md:pt-[17%] text-5xl md:text-9xl text-ellipsis font-light leading-relaxed transition-all ">
               Unleash Your Inner <br />{" "}
-              <span className="font-medium">Eco-Ninja</span>, <br/>One Dubious
-              Adventure at a Time!
+              <span className="font-medium">Eco-Ninja</span>, <br />
+              One Dubious Adventure at a Time!
             </div>
           </div>
-          
         </div>
-        <Marquee
-        
-        className="my-5 md:h-[16rem] h-[12rem] md:text-[250px] text-[180px] overflow-hidden font-light text-blue-400"
-      >
-      |<span className="text-blue-500"> Sus</span>tainble | Environmental awareness | Eco-conscious 
-      </Marquee>
+        <Marquee className="my-5 md:h-[16rem] h-[12rem] md:text-[250px] text-[180px] overflow-hidden font-light text-blue-400">
+          |<span className="text-blue-500"> Sus</span>tainble | Environmental
+          awareness | Eco-conscious
+        </Marquee>
         <div
           id="about"
           ref={aboutRef}
@@ -96,71 +92,70 @@ export default function Home() {
         >
           <div className="my-10 text bg-black "></div>
           <WorldCount />
-          <div className="mt-[100px] w-[90%] mx-auto">
+          <div className="mt-[100px] w-[90%] mx-auto leading-relaxed tracking-wider">
             <div className="text-6xl  font-light my-10">What is Sus Goals?</div>
             <div className="text-2xl md:text-3xl font-light h-full ">
-              <span className="font-semibold">Sus Goals</span> is simply a
-              project for my{" "}
-              <span className="text-blue-300">Design and Engineering</span>{" "}
-              Course under <span className="text-red-500">BTech in CSE</span>{" "}
-              :&lt;. I was supposed to make a craft based on{" "}
-              <span className="text-green-400">
-                <span className="text-green-600">sus</span>tainabilty and design
-              </span>{" "}
-              but paper craft sounded soo boring so decided to go with a website
-              and here we are. Why am I telling all these , coz I am out of
-              content to fill this space up
+              Welcome to <span className="font-semibold">Sus Goals</span>, an
+              innovative project born out of a
+              <span className="text-blue-300"> Design and Engineering </span>
+              course as part of my pursuit of a 
+              <span className="text-red-500"> BTech degree in CSE </span> :&lt;. In this
+              venture, I aimed to fuse <span className="text-green-400"><span className="text-green-600">sus</span>tainability</span> and design into a
+              meaningful endeavor that goes beyond the conventional.While the
+              initial idea was to create a paper craft, I sought to amplify the
+              impact and engagement by transitioning to a dynamic website, and
+              thus, the evolution of <span className="text-green-400">Sus Goals</span> began.
             </div>
             <div className="text-2xl md:text-3xl font-light ">
-              {" "}
-              Anyway this site gives you a random Sustainable Goal that{" "}
-              <span className="text-blue-300">refreshes daily</span>,
-              <span className="text-green-400">DO IT</span> and click the done
-              button, it will increment the world wide counter for the goals
-              reached. Technical side , Simply a react with next js app with
-              firebase as backend which I coded on a single sleepless night.
+              At its core, Sus Goals serves a noble purpose. Each day,
+              you&apos;re presented with a random Sustainable Goal - a reminder
+              of the pressing global challenges we face. By taking actionable
+              steps towards these goals and clicking the <span className="text-blue-300"> &apos;Done&apos; </span>
+              button, you&apos;re not only contributing personally but also
+              adding to the collective effort. Every completed goal increments
+              the global counter, symbolizing the collaborative impact of
+              individuals striving for a more sustainable world.
             </div>
+           
           </div>
         </div>
-
-        
       </main>
       <footer
-          ref={contactRef}
-          className="w-full mt-10 md:min-h-[200px]   bg-[#f8e5d8] p-10 justify-end"
-        >
-          <div className="flex md:flex-row flex-col justify-between">
-            <div>
-              <div className="m-4 text-6xl text-black font-semibold">
-                Be Sus with us.
-              </div>
-              <div className="m-4 text-3xl text-gray-500">
-                Join today and be part of something great
-              </div>
-              <div className="m-4 text-2xl text-gray-500">
-                Feel free to hit me up with suggestions
-              </div>
+        ref={contactRef}
+        className="w-full mt-10 md:min-h-[200px]   bg-[#f8e5d8] p-10 justify-end"
+      >
+        <div className="flex md:flex-row flex-col justify-between">
+          <div>
+            <div className="m-4 text-6xl text-black font-semibold">
+              Be Sus with us.
             </div>
-            <div className="mt-10">
-              <div className="text-xl text-black font-semibold">Contact Me</div>
-              <a href="https://github.com/fal3n-4ngel">
-                <div className="text-lg text-gray-500 hover:text-black cursor-pointer transition-all duration-600">
-                  Github : fal3n-4ngel
-                </div>
-              </a>
-              <a href="https://www.instagram.com/4di.krish/">
-                <div className="text-lg text-gray-500 hover:text-black cursor-pointer transition-all duration-600">
-                  Insta : 4di.krish
-                </div>
-              </a>
-              <a href="https://www.adithyakrishnan.com/">
+            <div className="m-4 text-3xl text-gray-500">
+              Join today and be part of something great
+            </div>
+            <div className="m-4 text-2xl text-gray-500">
+              Feel free to hit me up with suggestions
+            </div>
+          </div>
+          <div className="mt-10">
+            <div className="text-xl text-black font-semibold">Contact Me</div>
+            <a href="https://github.com/fal3n-4ngel">
+              <div className="text-lg text-gray-500 hover:text-black cursor-pointer transition-all duration-600">
+                Github : fal3n-4ngel
+              </div>
+            </a>
+            <a href="https://www.instagram.com/4di.krish/">
+              <div className="text-lg text-gray-500 hover:text-black cursor-pointer transition-all duration-600">
+                Insta : 4di.krish
+              </div>
+            </a>
+            <a href="https://www.adithyakrishnan.com/">
               <div className="text-lg text-gray-500 hover:text-black cursor-pointer transition-all duration-600">
                 Website : www.adithyakrishnan.com
               </div>
-              </a>
-            </div>
+            </a>
           </div>
-        </footer>
+        </div>
+      </footer>
     </div>
   );
 }

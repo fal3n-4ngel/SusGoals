@@ -4,6 +4,8 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { error } from "console";
 import firebase from "firebase/app";
+import CountUp from 'react-countup';
+
 import {
   getFirestore,
   collection,
@@ -242,8 +244,8 @@ function WorldCount() {
           </div>
           <div className=" w-[50%]  items-center mx-auto ">
             <div className="text-[150px] md:text-center text-ellipsis  mx-auto md:p-0 p-3 mt-10">
-              {" "}
-              {countValue}
+            <CountUp start={0} end={countValue} duration={2} separator="," />
+              
             </div>
             {!done && (
               <div className=" md:text-center text-ellipsis text-3xl md:text-4xl  mx-auto font-light  md:p-5">
