@@ -2,11 +2,12 @@
   Be Sus , and Save the world...
 
 ## What is Sus Goals?
-   A website that provides a random sustainable goal of the day, and displays world wide count. Refreshes daily 
+   Sus Goals serves a noble purpose. Each day, you're presented with a random Sustainable Goal - a reminder of the pressing global challenges we face. By taking actionable steps towards these goals and clicking the 'Done' button, you're not only contributing personally but also adding to the collective effort. Every completed goal increments the global counter, symbolizing the collaborative impact of individuals striving for a more sustainable world.
    
 ## Why ?
-   Sus Goals is simply a project for my Design and Engineering Course under BTech in CSE :< <br>
-Anyway this site gives you a random Sustainable Goal that refreshes daily,DO IT and click the done button, it will increment the world wide counter for the goals reached. Technical side , Simply a react with next js app with firebase as backend which I coded on a single sleepless night.
+   Sus Goals, an innovative project born out of a Design and Engineering course as part of my pursuit of a BTech degree in Computer Science and Engineering. In this venture, I aimed to fuse sustainability and design into a meaningful endeavor that goes beyond the conventional. While the initial idea was to create a paper craft, I sought to amplify the impact and engagement by transitioning to a dynamic website, and thus, the evolution of Sus Goals began.
+
+
    
 ## Tech Stuff Used
 
@@ -20,8 +21,10 @@ Anyway this site gives you a random Sustainable Goal that refreshes daily,DO IT 
    + Firestore Database
 
 ```
-## Contributors
 
+Thank you for joining me on this journey of creativity, technology, and positive change. Together, let's transform the world, one Sustainable Goal at a time.
+
+## Contributors
 <table>
 <tr>
     <td align="center">
