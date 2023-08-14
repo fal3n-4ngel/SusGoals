@@ -22,8 +22,8 @@
 
 ```
 
-Thank you for joining me on this journey of creativity, technology, and positive change. Together, let's transform the world, one Sustainable Goal at a time.
-
+Thank you for joining me on this journey of creativity, technology, and positive change. Together, let's transform the world, one Sustainable Goal at a time. <br>
+Liked the project?, wanna help me build it further? Just contact me via twitter or mail.
 ## Contributors
 <table>
 <tr>
