@@ -73,7 +73,15 @@ export default function Home() {
           ref={homeRef}
           className="w-full min-h-screen h-full bg-[#F9F2ED]"
         >
-          <div className="flex flex-col">
+          <div className="md:flex hidden flex-col">
+            <div className="md:w-[95%] px-[2%] pt-[200px] md:pt-[17%] text-5xl md:text-9xl text-ellipsis font-light leading-relaxed transition-all ">
+              <div>Unleash Your Inner </div>
+              <span className="font-medium">Eco-Ninja</span>, <br />
+              One Dubious <br />Adventure at a Time!
+            </div>
+          </div>
+
+          <div className="md:hidden flex flex-col">
             <div className="md:w-[75%] px-[2%] pt-[200px] md:pt-[17%] text-5xl md:text-9xl text-ellipsis font-light leading-relaxed transition-all ">
               Unleash Your Inner <br />{" "}
               <span className="font-medium">Eco-Ninja</span>, <br />
