@@ -21,8 +21,8 @@ const firebaseConfig = {
   authDomain: "susgoals.firebaseapp.com",
   projectId: "susgoals",
   storageBucket: "susgoals.appspot.com",
-  messagingSenderId: "133809952494",
-  appId: "1:133809952494:web:e5110d8592e752c3a245ff",
+  messagingSenderId: process.env.messagingSenderId,
+  appId: process.env.AppId,
   measurementId: "G-EY5GV6ZL1X",
 };
 
