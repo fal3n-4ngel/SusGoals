@@ -17,7 +17,7 @@ import {
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCl0ax0R398LtPDvO1up01uDX0X3vpqPa8",
+  apiKey: process.env.API_KEY,
   authDomain: "susgoals.firebaseapp.com",
   projectId: "susgoals",
   storageBucket: "susgoals.appspot.com",
