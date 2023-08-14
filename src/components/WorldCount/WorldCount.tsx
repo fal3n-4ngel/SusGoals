@@ -213,10 +213,10 @@ function WorldCount() {
             <div className="text-6xl text-center font-light my-10">
               ToDaYs TaSk
             </div>
-            <div className="w-[90%] mt-10  text-5xl font-light text-center">
+            <div className="md:w-[90%] w-full my-10  text-5xl font-light md:text-center px-5 mx-auto text-ellipsis">
               &ldquo;{String}&rdquo;
             </div>
-            <div className="flex justify-center mt-10">
+            <div className="flex justify-center mt-20">
               {!done && (
                 <button 
                   title="."
@@ -224,7 +224,7 @@ function WorldCount() {
                   onClick={increment}
                 >
                   <svg
-                    className="w-16 h-16 text-green-100 hover:text-green-400 group-hover:scale-150 transition-all shadow-green-300"
+                    className="w-16 h-16 text-green-100 hover:text-green-400 group-hover:scale-125 transition-all shadow-green-300 animate-pulse delay-200"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -242,13 +242,13 @@ function WorldCount() {
               )}
             </div>
           </div>
-          <div className=" w-[50%]  items-center mx-auto ">
+          <div className=" md:w-[50%] w-full  flex flex-col  justify-center items-center mx-auto ">
             <div className="text-[150px] md:text-center text-ellipsis  mx-auto md:p-0 p-3 mt-10">
             <CountUp start={0} end={countValue} duration={2} separator="," />
               
             </div>
             {!done && (
-              <div className=" md:text-center text-ellipsis text-3xl md:text-4xl  mx-auto font-light  md:p-5">
+              <div className=" md:text-center text-ellipsis text-3xl md:text-4xl mx-auto font-light p-10">
                 #sustainablegoals! reached. Wanna do the {" "}
                 <span className="font-light">{countValue + 1}</span> th
                  <span className="text-red-500 font-light"> Sus</span> goal?

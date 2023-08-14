@@ -112,7 +112,7 @@ export default function Home() {
               meaningful endeavor that goes beyond the conventional.While the
               initial idea was to create a paper craft, I sought to amplify the
               impact and engagement by transitioning to a dynamic website, and
-              thus, the evolution of <span className="text-green-400">Sus Goals</span> began.
+              thus, the evolution of <span className="text-green-400">Sus Goals</span> began.<br /><br />
             </div>
             <div className="text-2xl md:text-3xl font-light ">
               At its core, Sus Goals serves a noble purpose. Each day,
